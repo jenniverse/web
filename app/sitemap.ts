@@ -1,4 +1,4 @@
-import { allBlogs } from 'contentlayer/generated';
+import { allBlogs } from "contentlayer/generated";
 
 export default async function sitemap() {
   const blogs = allBlogs.map((post) => ({
@@ -6,10 +6,10 @@ export default async function sitemap() {
     lastModified: post.publishedAt,
   }));
 
-  const routes = ['', '/about', '/blog', '/guestbook', '/uses'].map(
+  const routes = ["", "/about", "/blog", "/uses"].map(
     (route) => ({
       url: `https://leerob.io${route}`,
-      lastModified: new Date().toISOString().split('T')[0],
+      lastModified: new Date().toISOString().split("T")[0],
     })
   );
 
