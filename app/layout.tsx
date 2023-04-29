@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jenny Kim",
     description: "Developer, writer, and creator.",
-    url: "https://leerob.io",
+    url: "https://jenniverse.github.io",
     siteName: "Jenny Kim",
     images: [
       {
-        url: "https://leerob.io/og.jpg",
+        url: "https://jenniverse.github.io/og.jpg",
         width: 1920,
         height: 1080,
       },

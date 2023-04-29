@@ -27,8 +27,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `https://leerob.io${image}`
-    : `https://leerob.io/api/og?title=${title}`;
+    ? `https://jenniverse.github.io${image}`
+    : `https://jenniverse.github.io/api/og?title=${title}`;
 
   return {
     title,
@@ -38,7 +38,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://leerob.io/blog/${slug}`,
+      url: `https://jenniverse.github.io/blog/${slug}`,
       images: [
         {
           url: ogImage,

@@ -29,9 +29,9 @@ const computedFields = {
       dateModified: doc.publishedAt,
       description: doc.summary,
       image: doc.image
-        ? `https://leerob.io${doc.image}`
-        : `https://leerob.io/api/og?title=${doc.title}`,
-      url: `https://leerob.io/blog/${doc._raw.flattenedPath}`,
+        ? `https://jenniverse.github.io${doc.image}`
+        : `https://jenniverse.github.io/api/og?title=${doc.title}`,
+      url: `https://jenniverse.github.io/blog/${doc._raw.flattenedPath}`,
       author: {
         "@type": "Person",
         name: "Jenny Kim",
