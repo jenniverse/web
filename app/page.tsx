@@ -39,7 +39,7 @@ export default async function HomePage() {
           width={100}
           priority
         />
-        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
+        {/* <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -62,7 +62,7 @@ export default async function HomePage() {
             <ViewsIcon />
             {`${views.toLocaleString()} blog views all time`}
           </Link>
-        </div>
+        </div> */}
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
         {bio()}
@@ -73,10 +73,10 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://www.linkedin.com/in/jenniverse"
           >
             <ArrowIcon />
-            <p className="h-7">follow me on twitter</p>
+            <p className="h-7">LinkedIn</p>
           </a>
         </li>
         <li>
@@ -84,12 +84,23 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="https://github.com/jenniverse"
           >
             <ArrowIcon />
-            <p className="h-7">get email updates</p>
+            <p className="h-7">GitHub</p>
           </a>
         </li>
+        {/* <li>
+          <a
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/jenniverse"
+          >
+            <ArrowIcon />
+            <p className="h-7">LinkedIn</p>
+          </a>
+        </li> */}
       </ul>
     </section>
   );
