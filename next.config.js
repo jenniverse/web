@@ -3,13 +3,17 @@ const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
   images: {
-    loader: 'akamai',
     formats: ["image/avif", "image/webp"],
-    path: '',
+    // Twitter Profile Picture
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        pathname: "/**",
+      },
+    ],
   },
-  assetPrefix: '',
   experimental: {
     appDir: true,
   },
