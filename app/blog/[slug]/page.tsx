@@ -61,7 +61,7 @@ export default async function Blog({ params }) {
     notFound();
   }
 
-  const tweets = await getTweets(post.tweetIds);
+
 
   return (
     <section>
@@ -77,7 +77,7 @@ export default async function Blog({ params }) {
         </div>
         <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />
       </div>
-      <Mdx code={post.body.code} tweets={tweets} />
+      <Mdx code={post.body.code}/>
     </section>
   );
 }

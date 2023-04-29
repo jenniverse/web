@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run setup && next build",
+    "build": "next build",
     "build-only": "next build",
     "start": "next start",
-    "setup": "node ./lib/setup.mjs"
+    "export": "next export"
   },
   "dependencies": {
     "@octokit/rest": "^19.0.7",
@@ -31,6 +31,7 @@
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
     "server-only": "^0.0.1",
+    "sharp": "^0.32.1",
     "shiki": "^0.13.0",
     "swr": "^2.0.3"
   },
